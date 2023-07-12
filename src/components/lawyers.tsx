@@ -14,7 +14,7 @@ function Lawyers() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="flex items-center gap-2 mb-5"
+          className="flex items-center gap-2 mb-5 text-secondary"
         >
           <BsCircleFill size="0.4rem" />
           <span>Abogados</span>
@@ -37,9 +37,14 @@ function Lawyers() {
             viewport={{ once: false, amount: 0.7 }}
             className="lawyer-card bg-lawyer1 group"
           >
-            <h3 className="text-white absolute bottom-0 opacity-0 left-[30px] transition-all duration-500 group-hover:opacity-100 group-hover:bottom-5 line-clamp-1">
-              Kevin Wilfredo Beltran Jimenez
-            </h3>
+            <div className="h-full rounded-[20px] group-hover:bg-gradient-to-t group-hover:from-black/80 group-hover:to-transparent">
+              <div className="text-white absolute bottom-0 opacity-0 left-[15px] transition-all duration-500 group-hover:opacity-100 group-hover:bottom-6">
+                <h3 className=" line-clamp-1">
+                  Kevin Wilfredo Beltran Jimenez
+                </h3>
+                <h3 className="font-extralight">Asistente Jurídico</h3>
+              </div>
+            </div>
           </motion.div>
           <motion.div
             variants={fadeIn("up", 0.6)}
@@ -48,9 +53,12 @@ function Lawyers() {
             viewport={{ once: false, amount: 0.7 }}
             className="lawyer-card bg-lawyer2 group"
           >
-            <h3 className="text-white absolute bottom-0 opacity-0 left-[30px] transition-all duration-500 group-hover:opacity-100 group-hover:bottom-5 line-clamp-1">
-              David Toro Canedo
-            </h3>
+            <div className="h-full rounded-[20px] group-hover:bg-gradient-to-t group-hover:from-black/80 group-hover:to-transparent">
+              <div className="text-white absolute bottom-0 opacity-0 left-[15px] transition-all duration-500 group-hover:opacity-100 group-hover:bottom-6">
+                <h3 className=" line-clamp-1">David Toro Canedo</h3>
+                <h3 className="font-extralight">Consultor Externo</h3>
+              </div>
+            </div>
           </motion.div>
           <motion.div
             variants={fadeIn("up", 0.7)}
@@ -59,9 +67,12 @@ function Lawyers() {
             viewport={{ once: false, amount: 0.7 }}
             className="lawyer-card bg-lawyer3 group"
           >
-            <h3 className="text-white absolute bottom-0 opacity-0 left-[30px] transition-all duration-500 group-hover:opacity-100 group-hover:bottom-5 line-clamp-1">
-              María José Mustafa Rivera
-            </h3>
+            <div className="h-full rounded-[20px] group-hover:bg-gradient-to-t group-hover:from-black/80 group-hover:to-transparent">
+              <div className="text-white absolute bottom-0 opacity-0 left-[15px] transition-all duration-500 group-hover:opacity-100 group-hover:bottom-6">
+                <h3 className=" line-clamp-1"> María José Mustafa Rivera</h3>
+                <h3 className="font-extralight">Asociado Junior</h3>
+              </div>
+            </div>
           </motion.div>
           <motion.div
             variants={fadeIn("up", 0.8)}
@@ -70,9 +81,12 @@ function Lawyers() {
             viewport={{ once: false, amount: 0.7 }}
             className="lawyer-card bg-lawyer4 group"
           >
-            <h3 className="text-white absolute bottom-0 opacity-0 left-[30px] transition-all duration-500 group-hover:opacity-100 group-hover:bottom-5 line-clamp-1">
-              Jeshua Enrriquez Mejia
-            </h3>
+            <div className="h-full rounded-[20px] group-hover:bg-gradient-to-t group-hover:from-black/80 group-hover:to-transparent">
+              <div className="text-white absolute bottom-0 opacity-0 left-[15px] transition-all duration-500 group-hover:opacity-100 group-hover:bottom-6">
+                <h3 className=" line-clamp-1"> Jeshua Enrriquez Mejia</h3>
+                <h3 className="font-extralight">Asistente Jurídico</h3>
+              </div>
+            </div>
           </motion.div>
 
           <motion.div
@@ -82,9 +96,12 @@ function Lawyers() {
             viewport={{ once: false, amount: 0.7 }}
             className="lawyer-card bg-lawyer5 group"
           >
-            <h3 className="text-white absolute bottom-0 opacity-0 left-[30px] transition-all duration-500 group-hover:opacity-100 group-hover:bottom-5 line-clamp-1">
-              Edgar Salazar
-            </h3>
+            <div className="h-full rounded-[20px] group-hover:bg-gradient-to-t group-hover:from-black/80 group-hover:to-transparent">
+              <div className="text-white absolute bottom-0 opacity-0 left-[15px] transition-all duration-500 group-hover:opacity-100 group-hover:bottom-6">
+                <h3 className=" line-clamp-1"> Edgar Salazar</h3>
+                <h3 className="font-extralight">Asociado Junior</h3>
+              </div>
+            </div>
           </motion.div>
           <motion.div
             variants={fadeIn("up", 1.0)}
@@ -93,9 +110,14 @@ function Lawyers() {
             viewport={{ once: false, amount: 0.7 }}
             className="lawyer-card bg-lawyer6 group"
           >
-            <h3 className="text-white absolute bottom-0 opacity-0 left-[30px] transition-all duration-500 group-hover:opacity-100 group-hover:bottom-5 line-clamp-1">
-              William Alejandro Sanchez Peña Cruz
-            </h3>
+            <div className="h-full rounded-[20px] group-hover:bg-gradient-to-t group-hover:from-black/80 group-hover:to-transparent">
+              <div className="text-white absolute bottom-0 opacity-0 left-[15px] transition-all duration-500 group-hover:opacity-100 group-hover:bottom-6">
+                <h3 className=" line-clamp-1">
+                  William Alejandro Sanchez Peña Cruz
+                </h3>
+                <h3 className="font-extralight">Asistente Jurídico</h3>
+              </div>
+            </div>
           </motion.div>
           <motion.div
             variants={fadeIn("up", 1.1)}
@@ -104,9 +126,14 @@ function Lawyers() {
             viewport={{ once: false, amount: 0.7 }}
             className="lawyer-card bg-lawyer7 group"
           >
-            <h3 className="text-white absolute bottom-0 opacity-0 left-[30px] transition-all duration-500 group-hover:opacity-100 group-hover:bottom-5 line-clamp-1">
-              Stephanie Sanchez Peña Kushida
-            </h3>
+            <div className="h-full rounded-[20px] group-hover:bg-gradient-to-t group-hover:from-black/80 group-hover:to-transparent">
+              <div className="text-white absolute bottom-0 opacity-0 left-[15px] transition-all duration-500 group-hover:opacity-100 group-hover:bottom-6">
+                <h3 className=" line-clamp-1">
+                  Stephanie Sanchez Peña Kushida
+                </h3>
+                <h3 className="font-extralight">Socio</h3>
+              </div>
+            </div>
           </motion.div>
           <motion.div
             variants={fadeIn("up", 1.2)}
@@ -115,9 +142,12 @@ function Lawyers() {
             viewport={{ once: false, amount: 0.7 }}
             className="lawyer-card bg-lawyer8 group"
           >
-            <h3 className="text-white absolute bottom-0 opacity-0 left-[30px] transition-all duration-500 group-hover:opacity-100 group-hover:bottom-5 line-clamp-1">
-              William Sanchez Peña Carrafa
-            </h3>
+            <div className="h-full rounded-[20px] group-hover:bg-gradient-to-t group-hover:from-black/80 group-hover:to-transparent">
+              <div className="text-white absolute bottom-0 opacity-0 left-[15px] transition-all duration-500 group-hover:opacity-100 group-hover:bottom-6">
+                <h3 className=" line-clamp-1"> William Sanchez Peña Carrafa</h3>
+                <h3 className="font-extralight">Socio</h3>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

@@ -1,13 +1,18 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+// images
+import Logo from "../assets/logo.png";
+
 function Footer() {
   return (
     <footer className="bg-black" id="contact">
       <div className="border-b border-gray-200/40">
         <div className="max-w-view-screen mx-auto py-[100px]">
-          <h1 className="lg:text-lg text-white">
+          {/* <h1 className="lg:text-lg text-white">
             <span className="font-bold">Sánchez Peña </span>
             <span>& Asociados</span>
-          </h1>
+          </h1> */}
+
+          <img className="max-w-[200px]" src={Logo} alt="" />
 
           <div className="text-white grid grid-cols-[1fr_auto_auto] gap-72 mt-16">
             <div>
@@ -23,19 +28,19 @@ function Footer() {
             <div>
               <h3 className="mb-5">EXPLORAR</h3>
               <ul className="flex flex-col gap-3">
-                <li className="text-gray-300 font-extralight">
+                <li className="text-gray-300 font-extralight hover:text-secondary hover:ml-1 transition-all duration-500">
                   <a href="">Inicio</a>
                 </li>
-                <li className="text-gray-300 font-extralight">
+                <li className="text-gray-300 font-extralight hover:text-secondary hover:ml-1 transition-all duration-500">
                   <a href="">Firma</a>
                 </li>
-                <li className="text-gray-300 font-extralight">
+                <li className="text-gray-300 font-extralight hover:text-secondary hover:ml-1 transition-all duration-500">
                   <a href="">Abogados</a>
                 </li>
-                <li className="text-gray-300 font-extralight">
+                <li className="text-gray-300 font-extralight hover:text-secondary transition-all duration-500">
                   <a href="">Especialidades</a>
                 </li>
-                <li className="text-gray-300 font-extralight">
+                <li className="text-gray-300 font-extralight hover:text-secondary hover:ml-1 transition-all duration-500">
                   <a href="">Contacto</a>
                 </li>
               </ul>
@@ -56,18 +61,27 @@ function Footer() {
         </p>
         <ul className="flex items-center gap-4">
           <li>
-            <a className="p-3 rounded-full border border-white block" href="">
-              <FaFacebookF size="0.8rem" color="white" />
+            <a
+              className="p-3 rounded-full border border-white block text-white hover:text-secondary hover:border-secondary transition-all duration-500"
+              href=""
+            >
+              <FaFacebookF size="0.8rem" />
             </a>
           </li>
           <li>
-            <a className="p-3 rounded-full border border-white block" href="">
-              <FaInstagram size="0.8rem" color="white" />
+            <a
+              className="p-3 rounded-full border border-white block text-white hover:text-secondary hover:border-secondary transition-all duration-500"
+              href=""
+            >
+              <FaInstagram size="0.8rem" />
             </a>
           </li>
           <li>
-            <a className="p-3 rounded-full border border-white block" href="">
-              <FaLinkedinIn size="0.8rem" color="white" />
+            <a
+              className="p-3 rounded-full border border-white block text-white hover:text-secondary hover:border-secondary transition-all duration-500"
+              href=""
+            >
+              <FaLinkedinIn size="0.8rem" />
             </a>
           </li>
         </ul>

@@ -20,7 +20,7 @@ function Services() {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.7 }}
-          className="flex items-center gap-2 mb-5"
+          className="flex items-center gap-2 mb-5 text-secondary"
         >
           <BsCircleFill size="0.4rem" />
           <span>Servicios</span>
@@ -35,7 +35,7 @@ function Services() {
           <h1 className="text-5xl font-bold">Nuestras Especialidades</h1>
           <a
             href="/"
-            className="max-w-lg border border-gray-300 px-5 py-2 rounded-full font-semibold inline-flex items-center gap-3"
+            className="max-w-lg border border-gray-300 px-5 py-2 rounded-full font-semibold inline-flex items-center gap-3 transition-all duration-500 hover:text-primary hover:border-primary"
           >
             <span>Ver Todas</span>
             <BsArrowRight />
@@ -60,7 +60,7 @@ function Services() {
               construcciones, edificios, remodelaciones, divisiones,
               particiones, fraccionamiento
             </p>
-            <a className="flex items-center gap-2 font-semibold" href="/">
+            <a className="flex items-center gap-2 font-semibold hover:text-primary transition-all duration-500" href="/">
               <span>Ver más</span>
               <FiArrowUpRight size="1rem" />
             </a>
@@ -82,7 +82,7 @@ function Services() {
               construcciones, edificios, remodelaciones, divisiones,
               particiones, fraccionamiento
             </p>
-            <a className="flex items-center gap-2 font-semibold" href="/">
+            <a className="flex items-center gap-2 font-semibold hover:text-primary transition-all duration-500" href="/">
               <span>Ver más</span>
               <FiArrowUpRight size="1rem" />
             </a>
@@ -104,7 +104,7 @@ function Services() {
               construcciones, edificios, remodelaciones, divisiones,
               particiones, fraccionamiento
             </p>
-            <a className="flex items-center gap-2 font-semibold" href="/">
+            <a className="flex items-center gap-2 font-semibold hover:text-primary transition-all duration-500" href="/">
               <span>Ver más</span>
               <FiArrowUpRight size="1rem" />
             </a>

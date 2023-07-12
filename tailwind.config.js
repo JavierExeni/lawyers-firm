@@ -14,6 +14,10 @@ export default {
       xl: "1200px",
     },
     extend: {
+      colors: {
+        primary: "#941914",
+        secondary: "#e0ac55",
+      },
       fontFamily: {
         roboto: ["Poppins"],
       },

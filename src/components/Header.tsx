@@ -4,6 +4,8 @@ import { BiMenuAltRight } from "react-icons/bi";
 import { IoMdClose } from "react-icons/io";
 // import link
 import { Link } from "react-scroll";
+// images
+import Logo from "../assets/logo.png";
 // PascalCasing
 function Header() {
   let Links = [
@@ -16,13 +18,26 @@ function Header() {
 
   let [open, setOpen] = useState(false);
 
+  // change nav color when scrolling
+  const [color, setColor] = useState(false);
+  const changeColor = () => {
+    if (window.scrollY >= 100) {
+      setColor(true);
+    } else {
+      setColor(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeColor);
+
   return (
-    <nav className="fixed top-0 left-0 w-full">
-      <div className="max-w-view-screen m-auto flex flex-row md:items-center justify-between bg-white lg:bg-transparent gap-4 lg:gap-10 p-4">
-        <h1 className="lg:text-xl">
-          <span className="font-bold">Sánchez Peña </span>
-          <span>& Asociados</span>
-        </h1>
+    <nav
+      className={`fixed top-0 left-0 w-full transition-all duration-300 ease-in z-50 ${
+        color ? "bg-white shadow-lg" : "bg-transparent"
+      }`}
+    >
+      <div className="max-w-view-screen m-auto flex flex-row md:items-center justify-between gap-4 lg:gap-10 p-4">
+        <img className="max-w-[170px]" src={Logo} alt="" />
         <button
           onClick={() => setOpen(!open)}
           className="cursor-pointer md:hidden"
@@ -43,25 +58,15 @@ function Header() {
             <li key={link.name}>
               <Link
                 to={link.link}
-                activeClass="active"
+                activeClass="text-primary"
                 smooth={true}
                 spy={true}
                 offset={-200}
-                className="cursor-pointer"
+                className="cursor-pointer text-gray-800 hover:text-primary duration-500"
               >
-                <a className="text-gray-800 hover:text-gray-400 duration-500">
-                  {link.name}
-                </a>
+                {link.name}
               </Link>
             </li>
-            // <li key={link.name}>
-            //   <a
-            //     href={link.link}
-            //     className="text-gray-800 hover:text-gray-400 duration-500"
-            //   >
-            //     {link.name}
-            //   </a>
-            // </li>
           ))}
         </ul>
       </div>

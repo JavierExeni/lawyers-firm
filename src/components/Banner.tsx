@@ -1,7 +1,7 @@
 // images
 import Image from "../assets/test-image.png";
 // icons
-import { BsArrowRight } from "react-icons/bs";
+import { BsArrowRight, BsWhatsapp } from "react-icons/bs";
 // type animation
 import { TypeAnimation } from "react-type-animation";
 // motion
@@ -22,7 +22,7 @@ function Banner() {
                   initial="hidden"
                   whileInView={"show"}
                   viewport={{ once: false, amount: 0.7 }}
-                  className="text-4xl"
+                  className="text-4xl text-primary"
                 >
                   <TypeAnimation
                     sequence={[
@@ -66,11 +66,11 @@ function Banner() {
                 initial="hidden"
                 whileInView={"show"}
                 viewport={{ once: false, amount: 0.7 }}
-                className="flex items-center gap-3 font-semibold"
+                className="inline-flex items-center gap-3 font-semibold transition-all duration-500 text-white rounded-full p-4 px-6 bg-[#25d366] hover:shadow-xl"
                 href="/"
               >
-                <span>Ver más</span>
-                <BsArrowRight />
+                <BsWhatsapp size="1.5rem" />
+                <span>Contáctanos</span>
               </motion.a>
             </div>
           </div>
