@@ -33,6 +33,7 @@ export default {
         lawyer6: "url('./assets/lawyers/06.jpg')",
         lawyer7: "url('./assets/lawyers/07.jpg')",
         lawyer8: "url('./assets/lawyers/08.jpg')",
+        justice: "url('./assets/justice.png')",
       },
     },
   },
